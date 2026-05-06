@@ -1,0 +1,8 @@
+{
+  "core": "UART_16550",
+  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/UART_16550",
+  "nodes": 348,
+  "edges": 627,
+  "feature_dim": 21,
+  "label": 0
+}

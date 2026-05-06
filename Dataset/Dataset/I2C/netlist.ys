@@ -1,0 +1,14 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Additional_Cores/I2C"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/I2C/timescale.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/I2C/i2c_master_top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/I2C/i2c_master_defines.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/I2C/i2c_master_bit_ctrl.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/I2C/i2c_master_byte_ctrl.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/additional_pipeline/artifacts/I2C/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/additional_pipeline/artifacts/I2C/netlist_synth.v"

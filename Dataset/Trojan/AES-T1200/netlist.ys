@@ -1,0 +1,17 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/TSC.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/lfsr.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/round.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/table.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/aes_128.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/timescale.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200/Trojan_Trigger.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/AES-T1200/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/AES-T1200/netlist_synth.v"

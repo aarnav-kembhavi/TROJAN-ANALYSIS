@@ -1,0 +1,21 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Additional_Cores/SDRAM"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/wb2sdrc.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_core.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sync_fifo.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/timescale.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/async_fifo.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_define.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_req_gen.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_xfr_ctl.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_bank_ctl.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_bank_fsm.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/SDRAM/sdrc_bs_convert.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/additional_pipeline/artifacts/SDRAM/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/additional_pipeline/artifacts/SDRAM/netlist_synth.v"

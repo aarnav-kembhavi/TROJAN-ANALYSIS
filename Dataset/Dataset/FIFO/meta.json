@@ -1,0 +1,8 @@
+{
+  "core": "FIFO",
+  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/FIFO",
+  "nodes": 338,
+  "edges": 610,
+  "feature_dim": 21,
+  "label": 0
+}

@@ -1,0 +1,8 @@
+{
+  "core": "I2C",
+  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/I2C",
+  "nodes": 697,
+  "edges": 1238,
+  "feature_dim": 21,
+  "label": 0
+}

@@ -1,0 +1,12 @@
+verilog_defaults -add -I/home/ranjan810/trojan_project/trusthub_pipeline/extracted/RS232-T300/RS232-T300/src
+read_verilog -defer trusthub_pipeline/extracted/RS232-T300/RS232-T300/src/uart.v
+read_verilog -defer trusthub_pipeline/extracted/RS232-T300/RS232-T300/src/u_rec.v
+read_verilog -defer trusthub_pipeline/extracted/RS232-T300/RS232-T300/src/u_xmit.v
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json trusthub_pipeline/artifacts/RS232-T300/netlist.json
+write_verilog trusthub_pipeline/artifacts/RS232-T300/netlist_synth.v

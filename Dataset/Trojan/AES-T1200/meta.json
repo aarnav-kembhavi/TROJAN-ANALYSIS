@@ -1,0 +1,8 @@
+{
+  "circuit": "AES-T1200",
+  "source_dir": "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1200",
+  "nodes": 752,
+  "edges": 1246,
+  "feature_dim": 21,
+  "label": 1
+}

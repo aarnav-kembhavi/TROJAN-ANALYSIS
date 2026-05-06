@@ -1,0 +1,10 @@
+verilog_defaults -add -I/home/ranjan810/trojan_project/trusthub_pipeline/extracted/RS232-T1800/RS232-T1800/src/90nm
+read_verilog -defer trusthub_pipeline/extracted/RS232-T1800/RS232-T1800/src/90nm/uart_scan_route.v
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json trusthub_pipeline/artifacts/RS232-T1800/netlist.json
+write_verilog trusthub_pipeline/artifacts/RS232-T1800/netlist_synth.v

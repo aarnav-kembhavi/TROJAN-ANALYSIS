@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python preprocess_common.py)",
+      "Bash(python -c ':*)",
+      "Bash(python train_masked_gae_multi.py)",
+      "WebSearch",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:cseweb.ucsd.edu)",
+      "WebFetch(domain:www.trust-hub.org)",
+      "WebFetch(domain:ieee-dataport.org)",
+      "WebFetch(domain:past.date-conference.com)",
+      "WebFetch(domain:link.springer.com)",
+      "WebFetch(domain:eprint.iacr.org)",
+      "WebFetch(domain:www.mdpi.com)"
+    ]
+  }
+}

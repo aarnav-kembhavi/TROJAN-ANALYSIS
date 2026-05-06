@@ -1,0 +1,9 @@
+{
+  "benchmark": "RS232-T1100",
+  "source_zip": "https://trust-hub.org/downloads/resource/benchmarks/RS232/RS232-T1100.zip",
+  "source_dir": "trusthub_pipeline/extracted/RS232-T1100/RS232-T1100/src",
+  "nodes": 271,
+  "edges": 552,
+  "feature_dim": 21,
+  "label": 1
+}

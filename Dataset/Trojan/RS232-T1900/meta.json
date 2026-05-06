@@ -1,0 +1,9 @@
+{
+  "benchmark": "RS232-T1900",
+  "source_zip": "https://trust-hub.org/downloads/resource/benchmarks/RS232/RS232-T1900.zip",
+  "source_dir": "trusthub_pipeline/extracted/RS232-T1900/RS232-T1900/src",
+  "nodes": 276,
+  "edges": 547,
+  "feature_dim": 21,
+  "label": 1
+}

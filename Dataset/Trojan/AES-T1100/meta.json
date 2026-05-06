@@ -1,0 +1,8 @@
+{
+  "circuit": "AES-T1100",
+  "source_dir": "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1100",
+  "nodes": 457,
+  "edges": 542,
+  "feature_dim": 21,
+  "label": 1
+}

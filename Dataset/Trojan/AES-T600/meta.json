@@ -1,0 +1,8 @@
+{
+  "circuit": "AES-T600",
+  "source_dir": "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T600",
+  "nodes": 266,
+  "edges": 271,
+  "feature_dim": 21,
+  "label": 1
+}

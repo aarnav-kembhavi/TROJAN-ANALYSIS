@@ -1,0 +1,15 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600/top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600/round.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600/table.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600/aes_128.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600/Trojan_Trigger.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-T1600/AM_Transmission.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/AES-T1600/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/AES-T1600/netlist_synth.v"

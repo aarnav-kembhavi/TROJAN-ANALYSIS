@@ -1,0 +1,9 @@
+{
+  "benchmark": "RS232-T600",
+  "source_zip": "https://trust-hub.org/downloads/resource/benchmarks/RS232/RS232-T600.zip",
+  "source_dir": "trusthub_pipeline/extracted/RS232-T600/RS232-T600/src",
+  "nodes": 139,
+  "edges": 212,
+  "feature_dim": 21,
+  "label": 1
+}

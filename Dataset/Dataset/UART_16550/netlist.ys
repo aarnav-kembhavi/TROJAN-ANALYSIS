@@ -1,0 +1,21 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Additional_Cores/UART_16550"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/raminfr.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_wb.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/timescale.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_regs.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_rfifo.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_tfifo.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_defines.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_debug_if.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_receiver.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_sync_flops.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Additional_Cores/UART_16550/uart_transmitter.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/additional_pipeline/artifacts/UART_16550/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/additional_pipeline/artifacts/UART_16550/netlist_synth.v"
