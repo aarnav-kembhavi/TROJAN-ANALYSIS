@@ -1,0 +1,10 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/PIC16F84-T200"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/PIC16F84-T200/topModule.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/PIC16F84-T200/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/PIC16F84-T200/netlist_synth.v"

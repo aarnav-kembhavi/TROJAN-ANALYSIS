@@ -1,0 +1,8 @@
+{
+  "circuit": "SRAM-T320",
+  "source_dir": "/home/ranjan810/trojan_project/Trojan_Set_1/SRAM-T320",
+  "nodes": 8639,
+  "edges": 21247,
+  "feature_dim": 21,
+  "label": 1
+}

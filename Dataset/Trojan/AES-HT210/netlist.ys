@@ -1,0 +1,12 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/AES-HT210"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-HT210/round.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-HT210/table.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/AES-HT210/timescale.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/AES-HT210/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/AES-HT210/netlist_synth.v"

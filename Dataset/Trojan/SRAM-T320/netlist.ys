@@ -1,0 +1,11 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/SRAM-T320"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/SRAM-T320/timescale.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/SRAM-T320/sram_HT3_llama3-70b-8192_A1.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/SRAM-T320/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/SRAM-T320/netlist_synth.v"

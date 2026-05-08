@@ -1,0 +1,8 @@
+{
+  "circuit": "UART-T200",
+  "source_dir": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200",
+  "nodes": 166,
+  "edges": 328,
+  "feature_dim": 21,
+  "label": 1
+}

@@ -1,0 +1,12 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/timescale.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/UART-T200/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/UART-T200/netlist_synth.v"

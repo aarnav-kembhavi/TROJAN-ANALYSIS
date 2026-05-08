@@ -1,9 +1,0 @@
-{
-  "benchmark": "AES-T1200",
-  "source_zip": "https://trust-hub.org/downloads/resource/benchmarks/AES/AES-T1200.zip",
-  "source_dir": "trusthub_pipeline/extracted/AES-T1200/AES-T1200/src/TjFree",
-  "nodes": 489,
-  "edges": 560,
-  "feature_dim": 21,
-  "label": 0
-}

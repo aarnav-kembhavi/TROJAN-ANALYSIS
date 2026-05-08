@@ -1,0 +1,4287 @@
+{
+  "creator": "Yosys 0.33 (git sha1 2584903a060)",
+  "modules": {
+    "$paramod$6829b04ab2b1cee1ae540aec570b9e272ef0d6cf\\uart_tx": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "hdlname": "\\uart_tx",
+        "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:10.1-187.10"
+      },
+      "parameter_default_values": {
+        "BIT_RATE": "00000000000000000010010110000000",
+        "CLK_HZ": "00000010111110101111000010000000",
+        "PAYLOAD_BITS": "00000000000000000000000000001000",
+        "STOP_BITS": "00000000000000000000000000000001"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "resetn": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "uart_txd": {
+          "direction": "output",
+          "bits": [ 4 ]
+        },
+        "uart_tx_busy": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "uart_tx_en": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "uart_tx_data": {
+          "direction": "input",
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$573": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 15 ],
+            "E": [ 16 ],
+            "Q": [ 17 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$574": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 18 ],
+            "E": [ 16 ],
+            "Q": [ 19 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$575": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 20 ],
+            "E": [ 16 ],
+            "Q": [ 21 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$576": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 22 ],
+            "E": [ 16 ],
+            "Q": [ 23 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$577": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 24 ],
+            "E": [ 16 ],
+            "Q": [ 25 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$578": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 26 ],
+            "E": [ 16 ],
+            "Q": [ 27 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$579": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 28 ],
+            "E": [ 16 ],
+            "Q": [ 29 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$607": {
+          "hide_name": 1,
+          "type": "$_SDFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:162.1-168.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 30 ],
+            "Q": [ 31 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$608": {
+          "hide_name": 1,
+          "type": "$_SDFF_PN0_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:162.1-168.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 32 ],
+            "Q": [ 33 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$663": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP1P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:173.1-185.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 34 ],
+            "E": [ 35 ],
+            "Q": [ 4 ],
+            "R": [ 36 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$664": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 37 ],
+            "E": [ 38 ],
+            "Q": [ 39 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$665": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 41 ],
+            "E": [ 38 ],
+            "Q": [ 42 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$666": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 43 ],
+            "E": [ 38 ],
+            "Q": [ 44 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$667": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 45 ],
+            "E": [ 38 ],
+            "Q": [ 46 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$668": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 47 ],
+            "E": [ 38 ],
+            "Q": [ 48 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$669": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 49 ],
+            "E": [ 38 ],
+            "Q": [ 50 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$670": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 51 ],
+            "E": [ 38 ],
+            "Q": [ 52 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$671": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 53 ],
+            "E": [ 38 ],
+            "Q": [ 54 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$672": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 55 ],
+            "E": [ 38 ],
+            "Q": [ 56 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$673": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 57 ],
+            "E": [ 38 ],
+            "Q": [ 58 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$674": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 59 ],
+            "E": [ 38 ],
+            "Q": [ 60 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$675": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 61 ],
+            "E": [ 38 ],
+            "Q": [ 62 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$676": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 63 ],
+            "E": [ 38 ],
+            "Q": [ 64 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$677": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:147.1-157.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 65 ],
+            "E": [ 38 ],
+            "Q": [ 66 ],
+            "R": [ 40 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$678": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:130.1-142.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 67 ],
+            "E": [ 68 ],
+            "Q": [ 69 ],
+            "R": [ 70 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$679": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:130.1-142.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 71 ],
+            "E": [ 68 ],
+            "Q": [ 72 ],
+            "R": [ 70 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$680": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:130.1-142.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 73 ],
+            "E": [ 68 ],
+            "Q": [ 74 ],
+            "R": [ 70 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$681": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PP0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:130.1-142.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 75 ],
+            "E": [ 68 ],
+            "Q": [ 76 ],
+            "R": [ 70 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$682": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:115.1-125.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 14 ],
+            "E": [ 77 ],
+            "Q": [ 78 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$974": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "Y": [ 79 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$980": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "Y": [ 80 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$982": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 33 ],
+            "Y": [ 81 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$984": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "Y": [ 82 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$992": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 30 ],
+            "Y": [ 83 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$994": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 32 ],
+            "Y": [ 84 ]
+          }
+        },
+        "$auto$opt_expr.cc:607:replace_const_cells$998": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "Y": [ 37 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$336": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 39 ],
+            "B": [ 42 ],
+            "Y": [ 85 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$337": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 86 ],
+            "Y": [ 87 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$338": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 88 ],
+            "B": [ 50 ],
+            "Y": [ 89 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$339": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 79 ],
+            "B": [ 54 ],
+            "Y": [ 90 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$340": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ 58 ],
+            "Y": [ 91 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$341": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 92 ],
+            "B": [ 62 ],
+            "Y": [ 93 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$342": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 94 ],
+            "B": [ 66 ],
+            "Y": [ 95 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$344": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 85 ],
+            "B": [ 87 ],
+            "Y": [ 96 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$345": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 89 ],
+            "B": [ 90 ],
+            "Y": [ 97 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$346": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 91 ],
+            "B": [ 93 ],
+            "Y": [ 98 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$348": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 96 ],
+            "B": [ 97 ],
+            "Y": [ 99 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$349": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 98 ],
+            "B": [ 95 ],
+            "Y": [ 100 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$351": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.21-92.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 99 ],
+            "B": [ 100 ],
+            "Y": [ 101 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$363": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:93.21-93.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 69 ],
+            "B": [ 72 ],
+            "Y": [ 102 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$364": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:93.21-93.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ 80 ],
+            "Y": [ 103 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$366": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:93.21-93.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 102 ],
+            "B": [ 103 ],
+            "Y": [ 104 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$378": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.21-94.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 105 ],
+            "B": [ 72 ],
+            "Y": [ 106 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$379": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.21-94.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ 76 ],
+            "Y": [ 107 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$381": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.21-94.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 106 ],
+            "B": [ 107 ],
+            "Y": [ 108 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$385": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 109 ],
+            "B": [ 110 ],
+            "Y": [ 36 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$518": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "B": [ 112 ],
+            "Y": [ 35 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$549": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135.42-135.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 83 ],
+            "B": [ 84 ],
+            "Y": [ 113 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$556": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "B": [ 110 ],
+            "Y": [ 40 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$563": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 115 ],
+            "B": [ 116 ],
+            "Y": [ 117 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$565": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 117 ],
+            "B": [ 110 ],
+            "Y": [ 70 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$568": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 118 ],
+            "B": [ 119 ],
+            "Y": [ 68 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$581": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 77 ],
+            "B": [ 119 ],
+            "Y": [ 16 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$618": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82 ],
+            "B": [ 81 ],
+            "Y": [ 120 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$640": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 81 ],
+            "Y": [ 121 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$653": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 82 ],
+            "B": [ 33 ],
+            "Y": [ 122 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$699": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:593.20-593.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 123 ],
+            "B": [ 124 ],
+            "Y": [ 125 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$702": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:593.20-593.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 125 ],
+            "B": [ 126 ],
+            "Y": [ 127 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$704": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:593.20-593.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 123 ],
+            "B": [ 128 ],
+            "Y": [ 129 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$705": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:593.20-593.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 130 ],
+            "B": [ 77 ],
+            "Y": [ 131 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$707": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:593.20-593.31"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 129 ],
+            "B": [ 131 ],
+            "Y": [ 132 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$724": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:597.13-597.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 133 ],
+            "B": [ 124 ],
+            "Y": [ 111 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$725": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:597.13-597.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 112 ],
+            "B": [ 109 ],
+            "Y": [ 134 ]
+          }
+        },
+        "$auto$simplemap.cc:126:simplemap_reduce$727": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:597.13-597.15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 111 ],
+            "B": [ 134 ],
+            "Y": [ 135 ]
+          }
+        },
+        "$auto$simplemap.cc:167:logic_reduce$659": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 31 ],
+            "B": [ 33 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$auto$simplemap.cc:196:simplemap_lognot$383": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.21-94.47"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 108 ],
+            "Y": [ 136 ]
+          }
+        },
+        "$auto$simplemap.cc:196:simplemap_lognot$553": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135.42-135.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 113 ],
+            "Y": [ 137 ]
+          }
+        },
+        "$auto$simplemap.cc:196:simplemap_lognot$622": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 120 ],
+            "Y": [ 133 ]
+          }
+        },
+        "$auto$simplemap.cc:196:simplemap_lognot$644": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 121 ],
+            "Y": [ 124 ]
+          }
+        },
+        "$auto$simplemap.cc:196:simplemap_lognot$657": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 122 ],
+            "Y": [ 112 ]
+          }
+        },
+        "$auto$simplemap.cc:196:simplemap_lognot$662": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 109 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$386": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.21-94.72"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 136 ],
+            "B": [ 133 ],
+            "Y": [ 138 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$519": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 109 ],
+            "B": [ 6 ],
+            "Y": [ 77 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$540": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:133.17-133.63"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 121 ],
+            "B": [ 120 ],
+            "Y": [ 115 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$554": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135.17-135.65"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "B": [ 137 ],
+            "Y": [ 116 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$557": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.17-137.49"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 133 ],
+            "B": [ 114 ],
+            "Y": [ 118 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$558": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.17-139.50"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 124 ],
+            "B": [ 114 ],
+            "Y": [ 119 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$566": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:152.17-153.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 112 ],
+            "B": [ 124 ],
+            "Y": [ 139 ]
+          }
+        },
+        "$auto$simplemap.cc:225:simplemap_logbin$569": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:152.17-154.38"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 139 ],
+            "B": [ 133 ],
+            "Y": [ 38 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$312": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:182.17-182.38|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:182.14-184.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "1" ],
+            "B": [ "x" ],
+            "S": [ 120 ],
+            "Y": [ 140 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$420": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:101.34-101.69"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "Y": [ 114 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$451": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:102.34-102.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 104 ],
+            "Y": [ 141 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$484": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:103.34-103.68"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 138 ],
+            "Y": [ 142 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$582": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:180.17-180.38|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:180.14-184.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 17 ],
+            "B": [ 140 ],
+            "S": [ 121 ],
+            "Y": [ 143 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$583": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:178.17-178.39|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:178.14-184.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 143 ],
+            "S": [ 122 ],
+            "Y": [ 34 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$584": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.17-139.50|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 105 ],
+            "S": [ 119 ],
+            "Y": [ 144 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$585": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.17-139.50|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 145 ],
+            "S": [ 119 ],
+            "Y": [ 146 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$586": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.17-139.50|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 147 ],
+            "S": [ 119 ],
+            "Y": [ 148 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$587": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.17-139.50|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:139.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 149 ],
+            "S": [ 119 ],
+            "Y": [ 150 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$588": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.17-137.49|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 144 ],
+            "B": [ 105 ],
+            "S": [ 118 ],
+            "Y": [ 67 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$589": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.17-137.49|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 146 ],
+            "B": [ 145 ],
+            "S": [ 118 ],
+            "Y": [ 71 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$590": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.17-137.49|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 148 ],
+            "B": [ 147 ],
+            "S": [ 118 ],
+            "Y": [ 73 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$591": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.17-137.49|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.14-141.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 150 ],
+            "B": [ 149 ],
+            "S": [ 118 ],
+            "Y": [ 75 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$593": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 21 ],
+            "S": [ 119 ],
+            "Y": [ 151 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$594": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 151 ],
+            "B": [ 8 ],
+            "S": [ 77 ],
+            "Y": [ 18 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$595": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 19 ],
+            "S": [ 119 ],
+            "Y": [ 152 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$596": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 152 ],
+            "B": [ 7 ],
+            "S": [ 77 ],
+            "Y": [ 15 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$597": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 23 ],
+            "S": [ 119 ],
+            "Y": [ 153 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$598": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 153 ],
+            "B": [ 9 ],
+            "S": [ 77 ],
+            "Y": [ 20 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$599": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 25 ],
+            "S": [ 119 ],
+            "Y": [ 154 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$600": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 154 ],
+            "B": [ 10 ],
+            "S": [ 77 ],
+            "Y": [ 22 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$601": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 27 ],
+            "S": [ 119 ],
+            "Y": [ 155 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$602": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 155 ],
+            "B": [ 11 ],
+            "S": [ 77 ],
+            "Y": [ 24 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$603": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 29 ],
+            "S": [ 119 ],
+            "Y": [ 156 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$604": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 156 ],
+            "B": [ 12 ],
+            "S": [ 77 ],
+            "Y": [ 26 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$605": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "x" ],
+            "B": [ 78 ],
+            "S": [ 119 ],
+            "Y": [ 157 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$606": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.17-118.52|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:118.14-124.8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 157 ],
+            "B": [ 13 ],
+            "S": [ 77 ],
+            "Y": [ 28 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$720": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:597.13-597.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 132 ],
+            "S": [ 135 ],
+            "Y": [ 30 ]
+          }
+        },
+        "$auto$simplemap.cc:267:simplemap_mux$721": {
+          "hide_name": 1,
+          "type": "$_MUX_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:597.13-597.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "S": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ "0" ],
+            "B": [ 127 ],
+            "S": [ 135 ],
+            "Y": [ 32 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$592": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "Y": [ 110 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$760": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:279.31-279.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 69 ],
+            "Y": [ 105 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$890": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:279.31-279.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "Y": [ 86 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$891": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:279.31-279.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "Y": [ 88 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$897": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:279.31-279.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "Y": [ 92 ]
+          }
+        },
+        "$auto$simplemap.cc:38:simplemap_not$899": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:279.31-279.37"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "Y": [ 94 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$711": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:585.44-585.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 101 ],
+            "B": [ 112 ],
+            "Y": [ 130 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$712": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:585.44-585.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 114 ],
+            "B": [ 112 ],
+            "Y": [ 126 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$714": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:585.44-585.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 141 ],
+            "B": [ 124 ],
+            "Y": [ 128 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$718": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:585.44-585.84"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 142 ],
+            "B": [ 133 ],
+            "Y": [ 123 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$729": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "B": [ 69 ],
+            "Y": [ 145 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$730": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ 158 ],
+            "Y": [ 147 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$731": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 76 ],
+            "B": [ 159 ],
+            "Y": [ 149 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$765": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 39 ],
+            "Y": [ 41 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$766": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 160 ],
+            "Y": [ 43 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$767": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "B": [ 161 ],
+            "Y": [ 45 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$768": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ 162 ],
+            "Y": [ 47 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$769": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ 163 ],
+            "Y": [ 49 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$770": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 164 ],
+            "Y": [ 51 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$771": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54 ],
+            "B": [ 165 ],
+            "Y": [ 53 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$772": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ 166 ],
+            "Y": [ 55 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$773": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 58 ],
+            "B": [ 167 ],
+            "Y": [ 57 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$774": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ 168 ],
+            "Y": [ 59 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$775": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ 169 ],
+            "Y": [ 61 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$776": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 170 ],
+            "Y": [ 63 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$777": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:289.13-289.25"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 66 ],
+            "B": [ 171 ],
+            "Y": [ 65 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$902": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:240.19-240.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 72 ],
+            "B": [ 69 ],
+            "Y": [ 158 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$906": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 74 ],
+            "B": [ 158 ],
+            "Y": [ 159 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$913": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:240.19-240.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 42 ],
+            "B": [ 39 ],
+            "Y": [ 160 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$920": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:240.19-240.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 172 ],
+            "B": [ 160 ],
+            "Y": [ 162 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$923": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:240.19-240.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 173 ],
+            "B": [ 162 ],
+            "Y": [ 166 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$924": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 46 ],
+            "B": [ 44 ],
+            "Y": [ 172 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$925": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 50 ],
+            "B": [ 48 ],
+            "Y": [ 174 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$926": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 54 ],
+            "B": [ 52 ],
+            "Y": [ 175 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$927": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 58 ],
+            "B": [ 56 ],
+            "Y": [ 176 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$928": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 62 ],
+            "B": [ 60 ],
+            "Y": [ 177 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$930": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 175 ],
+            "B": [ 174 ],
+            "Y": [ 173 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$931": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 177 ],
+            "B": [ 176 ],
+            "Y": [ 178 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$932": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 178 ],
+            "B": [ 166 ],
+            "Y": [ 170 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$933": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 174 ],
+            "B": [ 162 ],
+            "Y": [ 164 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$934": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 176 ],
+            "B": [ 166 ],
+            "Y": [ 168 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$936": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 44 ],
+            "B": [ 160 ],
+            "Y": [ 161 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$937": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 48 ],
+            "B": [ 162 ],
+            "Y": [ 163 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$938": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 52 ],
+            "B": [ 164 ],
+            "Y": [ 165 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$939": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 56 ],
+            "B": [ 166 ],
+            "Y": [ 167 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$940": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 60 ],
+            "B": [ 168 ],
+            "Y": [ 169 ]
+          }
+        },
+        "$auto$simplemap.cc:75:simplemap_bitop$941": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:248.19-248.41"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 64 ],
+            "B": [ 170 ],
+            "Y": [ 171 ]
+          }
+        }
+      },
+      "netnames": {
+        "$auto$opt_dff.cc:194:make_patterns_logic$202": {
+          "hide_name": 1,
+          "bits": [ 35 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:194:make_patterns_logic$217": {
+          "hide_name": 1,
+          "bits": [ 68 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:194:make_patterns_logic$222": {
+          "hide_name": 1,
+          "bits": [ 16 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:253:combine_resets$199": {
+          "hide_name": 1,
+          "bits": [ 36 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:253:combine_resets$208": {
+          "hide_name": 1,
+          "bits": [ 40 ],
+          "attributes": {
+          }
+        },
+        "$auto$opt_dff.cc:253:combine_resets$214": {
+          "hide_name": 1,
+          "bits": [ 70 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2401:Not$198": {
+          "hide_name": 1,
+          "bits": [ 110 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$967": {
+          "hide_name": 1,
+          "bits": [ 82 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$969": {
+          "hide_name": 1,
+          "bits": [ 81 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$971": {
+          "hide_name": 1,
+          "bits": [ 86 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$973": {
+          "hide_name": 1,
+          "bits": [ 88 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$975": {
+          "hide_name": 1,
+          "bits": [ 79 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$977": {
+          "hide_name": 1,
+          "bits": [ 94 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$979": {
+          "hide_name": 1,
+          "bits": [ 92 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$981": {
+          "hide_name": 1,
+          "bits": [ 80 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$993": {
+          "hide_name": 1,
+          "bits": [ 83 ],
+          "attributes": {
+          }
+        },
+        "$auto$rtlil.cc:2600:NotGate$995": {
+          "hide_name": 1,
+          "bits": [ 84 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$335": {
+          "hide_name": 1,
+          "bits": [ 85, 87, 89, 90, 91, 93, 95 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$343": {
+          "hide_name": 1,
+          "bits": [ 96, 97, 98 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$347": {
+          "hide_name": 1,
+          "bits": [ 99, 100 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$362": {
+          "hide_name": 1,
+          "bits": [ 102, 103 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$377": {
+          "hide_name": 1,
+          "bits": [ 106, 107 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$515": {
+          "hide_name": 1,
+          "bits": [ 111 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$526": {
+          "hide_name": 1,
+          "bits": [ 121 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$536": {
+          "hide_name": 1,
+          "bits": [ 120 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$548": {
+          "hide_name": 1,
+          "bits": [ 113 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$562": {
+          "hide_name": 1,
+          "bits": [ 117 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$652": {
+          "hide_name": 1,
+          "bits": [ 122 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$698": {
+          "hide_name": 1,
+          "bits": [ 125, 126 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$703": {
+          "hide_name": 1,
+          "bits": [ 129, 131 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:117:simplemap_reduce$723": {
+          "hide_name": 1,
+          "bits": [ 111, 134 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:246:simplemap_eqne$360": {
+          "hide_name": 1,
+          "bits": [ 104 ],
+          "attributes": {
+          }
+        },
+        "$auto$simplemap.cc:246:simplemap_eqne$375": {
+          "hide_name": 1,
+          "bits": [ 108 ],
+          "attributes": {
+          }
+        },
+        "$eq$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135$27_Y": {
+          "hide_name": 1,
+          "bits": [ 137 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135.42-135.65"
+          }
+        },
+        "$eq$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94$7_Y": {
+          "hide_name": 1,
+          "bits": [ 136 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.21-94.47"
+          }
+        },
+        "$logic_and$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120$20_Y": {
+          "hide_name": 1,
+          "bits": [ 119 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:120.17-120.62"
+          }
+        },
+        "$logic_and$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:133$25_Y": {
+          "hide_name": 1,
+          "bits": [ 115 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:133.17-133.63"
+          }
+        },
+        "$logic_and$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135$28_Y": {
+          "hide_name": 1,
+          "bits": [ 116 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:135.17-135.65"
+          }
+        },
+        "$logic_and$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137$30_Y": {
+          "hide_name": 1,
+          "bits": [ 118 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:137.17-137.49"
+          }
+        },
+        "$logic_or$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:152$39_Y": {
+          "hide_name": 1,
+          "bits": [ 139 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:152.17-153.38"
+          }
+        },
+        "$logic_or$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:152$41_Y": {
+          "hide_name": 1,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:152.17-154.38"
+          }
+        },
+        "$procmux$101_Y": {
+          "hide_name": 1,
+          "bits": [ 151 ],
+          "attributes": {
+          }
+        },
+        "$procmux$104_Y": {
+          "hide_name": 1,
+          "bits": [ 18 ],
+          "attributes": {
+          }
+        },
+        "$procmux$110_Y": {
+          "hide_name": 1,
+          "bits": [ 152 ],
+          "attributes": {
+          }
+        },
+        "$procmux$113_Y": {
+          "hide_name": 1,
+          "bits": [ 15 ],
+          "attributes": {
+          }
+        },
+        "$procmux$119_Y": {
+          "hide_name": 1,
+          "bits": [ 153 ],
+          "attributes": {
+          }
+        },
+        "$procmux$122_Y": {
+          "hide_name": 1,
+          "bits": [ 20 ],
+          "attributes": {
+          }
+        },
+        "$procmux$128_Y": {
+          "hide_name": 1,
+          "bits": [ 154 ],
+          "attributes": {
+          }
+        },
+        "$procmux$131_Y": {
+          "hide_name": 1,
+          "bits": [ 22 ],
+          "attributes": {
+          }
+        },
+        "$procmux$137_Y": {
+          "hide_name": 1,
+          "bits": [ 155 ],
+          "attributes": {
+          }
+        },
+        "$procmux$140_Y": {
+          "hide_name": 1,
+          "bits": [ 24 ],
+          "attributes": {
+          }
+        },
+        "$procmux$146_Y": {
+          "hide_name": 1,
+          "bits": [ 156 ],
+          "attributes": {
+          }
+        },
+        "$procmux$149_Y": {
+          "hide_name": 1,
+          "bits": [ 26 ],
+          "attributes": {
+          }
+        },
+        "$procmux$155_Y": {
+          "hide_name": 1,
+          "bits": [ 157 ],
+          "attributes": {
+          }
+        },
+        "$procmux$158_Y": {
+          "hide_name": 1,
+          "bits": [ 28 ],
+          "attributes": {
+          }
+        },
+        "$procmux$179.B": {
+          "hide_name": 1,
+          "bits": [ 142, 142, "0", 141, "1", "0", 101, 114, "0", 6, "0", "0" ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:571.28-571.29"
+          }
+        },
+        "$procmux$179.B_AND_S": {
+          "hide_name": 1,
+          "bits": [ 123, 123, "0", 128, 124, "0", 130, 126, "0", 77, "0", "0" ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:583.28-583.35"
+          }
+        },
+        "$procmux$179.S": {
+          "hide_name": 1,
+          "bits": [ 133, 124, 112, 109 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:573.22-573.23"
+          }
+        },
+        "$procmux$179.Y_B": {
+          "hide_name": 1,
+          "bits": [ 132, 127, "0" ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:578.19-578.22"
+          }
+        },
+        "$procmux$52_Y": {
+          "hide_name": 1,
+          "bits": [ 140 ],
+          "attributes": {
+          }
+        },
+        "$procmux$55_Y": {
+          "hide_name": 1,
+          "bits": [ 143 ],
+          "attributes": {
+          }
+        },
+        "$procmux$58_Y": {
+          "hide_name": 1,
+          "bits": [ 34 ],
+          "attributes": {
+          }
+        },
+        "$procmux$77_Y": {
+          "hide_name": 1,
+          "bits": [ 144, 146, 148, 150 ],
+          "attributes": {
+          }
+        },
+        "$procmux$80_Y": {
+          "hide_name": 1,
+          "bits": [ 67, 71, 73, 75 ],
+          "attributes": {
+          }
+        },
+        "$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140$34.$auto$alumacc.cc:485:replace_alu$559.CO": {
+          "hide_name": 1,
+          "bits": [ 69, 158, 159, 179 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:274.23-274.25",
+            "unused_bits": "3"
+          }
+        },
+        "$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140$34.$auto$alumacc.cc:485:replace_alu$559.X": {
+          "hide_name": 1,
+          "bits": [ 105, 72, 74, 76 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:270.23-270.24"
+          }
+        },
+        "$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140$34.$auto$alumacc.cc:485:replace_alu$559.Y": {
+          "hide_name": 1,
+          "bits": [ 105, 145, 147, 149 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:140.24-140.42|/usr/bin/../share/yosys/techmap.v:270.26-270.27"
+          }
+        },
+        "$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.CO": {
+          "hide_name": 1,
+          "bits": [ 39, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 180 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:274.23-274.25",
+            "unused_bits": "13"
+          }
+        },
+        "$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.X": {
+          "hide_name": 1,
+          "bits": [ 37, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:270.23-270.24"
+          }
+        },
+        "$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.Y": {
+          "hide_name": 1,
+          "bits": [ 37, 41, 43, 45, 47, 49, 51, 53, 55, 57, 59, 61, 63, 65 ],
+          "attributes": {
+            "force_downto": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:270.26-270.27"
+          }
+        },
+        "$techmap$procmux$179.$reduce_or$/usr/bin/../share/yosys/techmap.v:597$623_Y": {
+          "hide_name": 1,
+          "bits": [ 135 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:0.0-0.0|/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:99.5-105.12|/usr/bin/../share/yosys/techmap.v:597.13-597.15"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$815_Y": {
+          "hide_name": 1,
+          "bits": [ 172 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$818_Y": {
+          "hide_name": 1,
+          "bits": [ 174 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$821_Y": {
+          "hide_name": 1,
+          "bits": [ 175 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$824_Y": {
+          "hide_name": 1,
+          "bits": [ 176 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$827_Y": {
+          "hide_name": 1,
+          "bits": [ 177 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$836_Y": {
+          "hide_name": 1,
+          "bits": [ 173 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "$techmap$techmap$add$/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155$42.$auto$alumacc.cc:485:replace_alu$570.lcu.$and$/usr/bin/../share/yosys/techmap.v:241$839_Y": {
+          "hide_name": 1,
+          "bits": [ 178 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:155.26-155.46|/usr/bin/../share/yosys/techmap.v:286.27-286.69|/usr/bin/../share/yosys/techmap.v:241.12-241.34"
+          }
+        },
+        "bit_counter": {
+          "hide_name": 0,
+          "bits": [ 69, 72, 74, 76 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:72.11-72.22"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:11.21-11.24"
+          }
+        },
+        "cycle_counter": {
+          "hide_name": 0,
+          "bits": [ 39, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:68.25-68.38"
+          }
+        },
+        "data_to_send": {
+          "hide_name": 0,
+          "bits": [ 17, 19, 21, 23, 25, 27, 29, 78 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:64.24-64.36"
+          }
+        },
+        "fsm_state": {
+          "hide_name": 0,
+          "bits": [ 31, 33, "0" ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:76.11-76.20"
+          }
+        },
+        "n_fsm_state": {
+          "hide_name": 0,
+          "bits": [ 30, 32, "0" ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:77.11-77.22"
+          }
+        },
+        "next_bit": {
+          "hide_name": 0,
+          "bits": [ 114 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:92.6-92.14"
+          }
+        },
+        "payload_done": {
+          "hide_name": 0,
+          "bits": [ 141 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:93.6-93.18"
+          }
+        },
+        "resetn": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:12.21-12.27"
+          }
+        },
+        "stop_done": {
+          "hide_name": 0,
+          "bits": [ 138 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:94.6-94.15"
+          }
+        },
+        "txd_reg": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:60.5-60.12"
+          }
+        },
+        "uart_tx_busy": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:14.21-14.33"
+          }
+        },
+        "uart_tx_data": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:16.34-16.46"
+          }
+        },
+        "uart_tx_en": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:15.21-15.31"
+          }
+        },
+        "uart_txd": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/uart_tx.v:13.21-13.29"
+          }
+        }
+      }
+    },
+    "impl_top": {
+      "attributes": {
+        "hdlname": "\\impl_top",
+        "dynports": "00000000000000000000000000000001",
+        "top": "00000000000000000000000000000001",
+        "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:13.1-87.10"
+      },
+      "parameter_default_values": {
+        "BIT_RATE": "00000000000000000010010110000000",
+        "CLK_HZ": "00000010111110101111000010000000",
+        "PAYLOAD_BITS": "00000000000000000000000000001000"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "sw_0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "sw_1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "uart_rxd": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "uart_txd": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "led": {
+          "direction": "output",
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ]
+        }
+      },
+      "cells": {
+        "$auto$ff.cc:266:slice$304": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 15 ],
+            "E": [ 16 ],
+            "Q": [ 7 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$305": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 17 ],
+            "E": [ 16 ],
+            "Q": [ 8 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$306": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 18 ],
+            "E": [ 16 ],
+            "Q": [ 9 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$307": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN0P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 19 ],
+            "E": [ 16 ],
+            "Q": [ 10 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$308": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN1P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 20 ],
+            "E": [ 16 ],
+            "Q": [ 11 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$309": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN1P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 21 ],
+            "E": [ 16 ],
+            "Q": [ 12 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$310": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN1P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 22 ],
+            "E": [ 16 ],
+            "Q": [ 13 ],
+            "R": [ 3 ]
+          }
+        },
+        "$auto$ff.cc:266:slice$311": {
+          "hide_name": 1,
+          "type": "$_SDFFE_PN1P_",
+          "parameters": {
+          },
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:43.1-49.4"
+          },
+          "port_directions": {
+            "C": "input",
+            "D": "input",
+            "E": "input",
+            "Q": "output",
+            "R": "input"
+          },
+          "connections": {
+            "C": [ 2 ],
+            "D": [ 23 ],
+            "E": [ 16 ],
+            "Q": [ 14 ],
+            "R": [ 3 ]
+          }
+        },
+        "i_uart_rx": {
+          "hide_name": 0,
+          "type": "uart_rx",
+          "parameters": {
+            "BIT_RATE": "00000000000000000010010110000000",
+            "CLK_HZ": "00000010111110101111000010000000",
+            "PAYLOAD_BITS": "00000000000000000000000000001000"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:60.3-68.2"
+          },
+          "connections": {
+            "clk": [ 2 ],
+            "resetn": [ 3 ],
+            "uart_rx_break": [ 24 ],
+            "uart_rx_data": [ 15, 17, 18, 19, 20, 21, 22, 23 ],
+            "uart_rx_en": [ "1" ],
+            "uart_rx_valid": [ 16 ],
+            "uart_rxd": [ 5 ]
+          }
+        },
+        "i_uart_tx": {
+          "hide_name": 0,
+          "type": "$paramod$6829b04ab2b1cee1ae540aec570b9e272ef0d6cf\\uart_tx",
+          "parameters": {
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:77.3-84.2"
+          },
+          "port_directions": {
+            "clk": "input",
+            "resetn": "input",
+            "uart_tx_busy": "output",
+            "uart_tx_data": "input",
+            "uart_tx_en": "input",
+            "uart_txd": "output"
+          },
+          "connections": {
+            "clk": [ 2 ],
+            "resetn": [ 3 ],
+            "uart_tx_busy": [ 25 ],
+            "uart_tx_data": [ 15, 17, 18, 19, 20, 21, 22, 23 ],
+            "uart_tx_en": [ 16 ],
+            "uart_txd": [ 6 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:14.21-14.24"
+          }
+        },
+        "led": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:19.21-19.24"
+          }
+        },
+        "led_reg": {
+          "hide_name": 0,
+          "bits": [ 7, 8, 9, 10, 11, 12, 13, 14 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:35.26-35.33"
+          }
+        },
+        "sw_0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:15.21-15.25"
+          }
+        },
+        "sw_1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:16.21-16.25"
+          }
+        },
+        "uart_rx_break": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:29.13-29.26"
+          }
+        },
+        "uart_rx_data": {
+          "hide_name": 0,
+          "bits": [ 15, 17, 18, 19, 20, 21, 22, 23 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:27.26-27.38"
+          }
+        },
+        "uart_rx_valid": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:28.13-28.26"
+          }
+        },
+        "uart_rxd": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:17.21-17.29"
+          }
+        },
+        "uart_tx_busy": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:31.13-31.25",
+            "unused_bits": "0 "
+          }
+        },
+        "uart_tx_data": {
+          "hide_name": 0,
+          "bits": [ 15, 17, 18, 19, 20, 21, 22, 23 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:32.26-32.38"
+          }
+        },
+        "uart_tx_en": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:33.13-33.23"
+          }
+        },
+        "uart_txd": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "/home/ranjan810/trojan_project/Trojan_Set_1/UART-T200/impl_top.v:18.21-18.29"
+          }
+        }
+      }
+    }
+  }
+}

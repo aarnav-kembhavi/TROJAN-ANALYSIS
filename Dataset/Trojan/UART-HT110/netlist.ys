@@ -1,0 +1,13 @@
+verilog_defaults -add -I"/home/ranjan810/trojan_project/Trojan_Set_1/UART-HT110"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-HT110/uart_tx.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-HT110/impl_top.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-HT110/timescale.v"
+read_verilog -defer "/home/ranjan810/trojan_project/Trojan_Set_1/UART-HT110/uart_rx_HT2_gpt-4_A1.v"
+hierarchy -auto-top
+proc; opt
+fsm; opt
+memory; opt
+techmap; opt
+clean
+write_json "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/UART-HT110/netlist.json"
+write_verilog "/home/ranjan810/trojan_project/trojan_set_1_pipeline/artifacts/UART-HT110/netlist_synth.v"
