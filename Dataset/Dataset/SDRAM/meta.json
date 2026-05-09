@@ -1,8 +1,0 @@
-{
-  "core": "SDRAM",
-  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/SDRAM",
-  "nodes": 240,
-  "edges": 406,
-  "feature_dim": 21,
-  "label": 0
-}

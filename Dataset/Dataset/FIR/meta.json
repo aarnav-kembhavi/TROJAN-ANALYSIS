@@ -1,8 +1,0 @@
-{
-  "core": "FIR",
-  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/FIR",
-  "nodes": 235,
-  "edges": 494,
-  "feature_dim": 21,
-  "label": 0
-}

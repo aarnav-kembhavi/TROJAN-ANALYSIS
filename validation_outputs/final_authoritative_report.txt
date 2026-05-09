@@ -1,0 +1,14 @@
+=== FINAL PROJECT PERFORMANCE REPORT ===
+
+Model: SAGE+JK + Reconstruction MSE
+Dataset: Elite 150 (High Homogeneity)
+Feature Set: 40-dim + Augmented Fan-in Density
+
+--- GLOBAL PERFORMANCE ---
+AUROC:    1.0000
+F1 Score: 0.9706
+MCC:      0.9642
+
+--- CONFUSION MATRIX ---
+TP: 33  | FP: 2  
+FN: 0   | TN: 142

@@ -1,9 +1,0 @@
-{
-  "benchmark": "B15-T200",
-  "source_zip": "https://trust-hub.org/downloads/resource/benchmarks/B15/b15-T200.zip",
-  "source_dir": "trusthub_pipeline/extracted/B15-T200/b15-T200/src/TjFree",
-  "nodes": 3044,
-  "edges": 9052,
-  "feature_dim": 21,
-  "label": 0
-}

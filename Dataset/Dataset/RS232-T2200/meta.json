@@ -1,9 +1,0 @@
-{
-  "benchmark": "RS232-T2200",
-  "source_zip": "https://trust-hub.org/downloads/resource/benchmarks/RS232/RS232-T2200/RS232-T2200.zip",
-  "source_dir": "trusthub_pipeline/extracted/RS232-T2200/RS232-T2200/src/TjFree",
-  "nodes": 53,
-  "edges": 86,
-  "feature_dim": 21,
-  "label": 0
-}

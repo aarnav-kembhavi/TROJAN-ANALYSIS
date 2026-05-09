@@ -1,8 +1,0 @@
-{
-  "core": "FPU",
-  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/FPU",
-  "nodes": 481,
-  "edges": 830,
-  "feature_dim": 21,
-  "label": 0
-}

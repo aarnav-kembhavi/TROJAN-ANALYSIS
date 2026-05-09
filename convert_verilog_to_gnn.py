@@ -69,7 +69,10 @@ def parse_netlist_to_gnn_advanced(json_path, output_dir):
     num_nodes = len(nodes)
     
     features = np.zeros((num_nodes, 40))
-    type_map = {'$_AND_': 0, '$_OR_': 1, '$_NOT_': 2, '$_NAND_': 3, '$_NOR_': 4, '$_XOR_': 5, '$_DFF_': 6, '$_MUX_': 7}
+    # Improved Type Mapping for common tech libraries
+    type_map = {
+        'AND': 0, 'OR': 1, 'NOT': 2, 'INV': 2, 'NAND': 3, 'NOR': 4, 'XOR': 5, 'XNOR': 5, 'DFF': 6, 'MUX': 7
+    }
     type_map_rev = {}
 
     G = nx.DiGraph()
@@ -84,24 +87,51 @@ def parse_netlist_to_gnn_advanced(json_path, output_dir):
 
     for name, cell in cells.items():
         idx = node_idx[name]
-        c_type = cell['type']; type_map_rev[idx] = c_type
-        tid = next((v for k, v in type_map.items() if k in c_type), 7)
+        c_type = cell['type'].upper(); type_map_rev[idx] = c_type
+        
+        # Heuristic gate type mapping
+        tid = 7 # Default to MUX/OTHER
+        for key, val in type_map.items():
+            if key in c_type:
+                tid = val
+                break
+        
         features[idx, tid] = 1 # 0-7: Type
         features[idx, 8] = 1 if 'DFF' in c_type else 0 # 8: Seq Flag
+        
+        port_dirs = cell.get('port_directions', {})
         for p, nets in cell['connections'].items():
-            dir = cell['port_directions'].get(p, 'input')
+            # Infer direction if not provided
+            if p in port_dirs:
+                direction = port_dirs[p]
+            else:
+                # Heuristic: ports starting with Y, Q, O, Z or containing OUT are outputs
+                if any(p.upper().startswith(x) for x in ['Y', 'Q', 'O', 'Z']) or 'OUT' in p.upper():
+                    direction = 'output'
+                else:
+                    direction = 'input'
+            
             for net in nets:
-                if dir == 'input': net_receivers.setdefault(net, []).append(idx)
+                if direction == 'input': net_receivers.setdefault(net, []).append(idx)
                 else: net_drivers.setdefault(net, []).append(idx)
 
     pi_nodes = set(); po_nodes = set()
+    print(f"  Primary Inputs: {len(primary_inputs)} bits")
     for net, drvs in net_drivers.items():
         recs = net_receivers.get(net, [])
         for d in drvs:
             for r in recs:
                 if d != r: G.add_edge(d, r)
-        if net in primary_inputs: pi_nodes.update(recs)
-        if net in primary_outputs: po_nodes.update(drvs)
+    
+    for net in primary_inputs:
+        recs = net_receivers.get(net, [])
+        pi_nodes.update(recs)
+    for net in primary_outputs:
+        drvs = net_drivers.get(net, [])
+        po_nodes.update(drvs)
+        
+    print(f"  Detected PI Nodes: {len(pi_nodes)}")
+    print(f"  Detected PO Nodes: {len(po_nodes)}")
 
     # Linear-Time Graph Metrics
     cc0, cc1, co = calculate_scoap(G, num_nodes, type_map_rev)
@@ -112,16 +142,22 @@ def parse_netlist_to_gnn_advanced(json_path, output_dir):
     for n in pi_nodes: dist_pi[n] = 0
     while queue:
         u, d = queue.popleft()
-        for v in G.successors(u):
-            if dist_pi[v] == 1e6: dist_pi[v] = d + 1; queue.append((v, d + 1))
+        if d >= dist_pi[u]: # Safety: only propagate if we found a shorter path
+            for v in G.successors(u):
+                if dist_pi[v] == 1e6:
+                    dist_pi[v] = d + 1
+                    queue.append((v, d + 1))
             
     dist_po = {n: 1e6 for n in range(num_nodes)}
     queue = deque([(n, 0) for n in po_nodes])
     for n in po_nodes: dist_po[n] = 0
     while queue:
         u, d = queue.popleft()
-        for v in G.predecessors(u):
-            if dist_po[v] == 1e6: dist_po[v] = d + 1; queue.append((v, d + 1))
+        if d >= dist_po[u]:
+            for v in G.predecessors(u):
+                if dist_po[v] == 1e6:
+                    dist_po[v] = d + 1
+                    queue.append((v, d + 1))
 
     # Fast Topo Depths
     depths = {n: 0 for n in range(num_nodes)}

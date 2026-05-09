@@ -1,8 +1,0 @@
-{
-  "core": "SPI",
-  "source_dir": "/home/ranjan810/trojan_project/Additional_Cores/SPI",
-  "nodes": 160,
-  "edges": 312,
-  "feature_dim": 21,
-  "label": 0
-}
