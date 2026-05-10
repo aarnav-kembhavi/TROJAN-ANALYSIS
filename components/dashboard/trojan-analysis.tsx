@@ -30,9 +30,7 @@ import { trojanApi, TrojanPrediction, HealthCheck } from '@/lib/api/trojan-api';
 import { cn } from '@/lib/utils';
 
 export function TrojanAnalysis() {
-  const [featuresFile, setFeaturesFile] = useState<File | null>(null);
-  const [edgesFile, setEdgesFile] = useState<File | null>(null);
-  const [metaFile, setMetaFile] = useState<File | null>(null);
+  const [selectedFiles, setSelectedFiles] = useState<File[]>([]);
   
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -52,8 +50,8 @@ export function TrojanAnalysis() {
   }, []);
 
   const handlePredict = async () => {
-    if (!featuresFile || !edgesFile) {
-      setError('Please upload both features and edges files.');
+    if (selectedFiles.length === 0) {
+      setError('Please upload the circuit data files.');
       return;
     }
 
@@ -61,7 +59,7 @@ export function TrojanAnalysis() {
     setError(null);
     
     try {
-      const prediction = await trojanApi.predict(featuresFile, edgesFile, metaFile || undefined);
+      const prediction = await trojanApi.predict(selectedFiles);
       setResult(prediction);
     } catch (err: any) {
       setError(err.message || 'An error occurred during prediction.');
@@ -90,42 +88,31 @@ export function TrojanAnalysis() {
         {/* Upload Card */}
         <Card className="border-border/50 bg-gradient-to-b from-muted/50 to-muted">
           <CardHeader>
-            <CardTitle className="text-lg">Upload Circuit Data</CardTitle>
-            <CardDescription>Upload .npy files for circuit features and edges.</CardDescription>
+            <CardTitle className="text-lg">Upload Circuit Folder</CardTitle>
+            <CardDescription>Select the files (features.npy, edge_index.npy, etc.) from your circuit folder.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="grid w-full items-center gap-1.5">
-              <Label htmlFor="features">Features File (.npy)</Label>
+              <Label htmlFor="files">Circuit Files</Label>
               <Input 
-                id="features" 
+                id="files" 
                 type="file" 
-                accept=".npy" 
-                onChange={(e) => setFeaturesFile(e.target.files?.[0] || null)}
+                multiple
+                onChange={(e) => {
+                  if (e.target.files) {
+                    setSelectedFiles(Array.from(e.target.files));
+                  }
+                }}
               />
-            </div>
-            <div className="grid w-full items-center gap-1.5">
-              <Label htmlFor="edges">Edges File (.npy)</Label>
-              <Input 
-                id="edges" 
-                type="file" 
-                accept=".npy" 
-                onChange={(e) => setEdgesFile(e.target.files?.[0] || null)}
-              />
-            </div>
-            <div className="grid w-full items-center gap-1.5">
-              <Label htmlFor="meta">Metadata File (.json, optional)</Label>
-              <Input 
-                id="meta" 
-                type="file" 
-                accept=".json" 
-                onChange={(e) => setMetaFile(e.target.files?.[0] || null)}
-              />
+              <p className="text-xs text-muted-foreground mt-1">
+                Selected {selectedFiles.length} files
+              </p>
             </div>
           </CardContent>
           <CardFooter>
             <Button 
               onClick={handlePredict} 
-              disabled={isLoading || !featuresFile || !edgesFile}
+              disabled={isLoading || selectedFiles.length === 0}
               className="w-full"
             >
               {isLoading ? (

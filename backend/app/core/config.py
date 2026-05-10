@@ -7,9 +7,7 @@ class Settings(BaseSettings):
     API_V1_STR: str = "/api/v1"
     
     # Model Paths
-    MODEL_PATH: str = os.getenv("MODEL_PATH", "../TROJAN-ANALYSIS/Dataset/best_model.pkl")
-    PREPROCESSOR_PATH: str = os.getenv("PREPROCESSOR_PATH", "../TROJAN-ANALYSIS/Dataset/preprocessor_params.pkl")
-    
+    MODEL_PATH: str = os.getenv("MODEL_PATH", "../Hardware_Security_Dataset/mse_sage_jk.pt") 
     # Storage
     RESULTS_DIR: str = os.getenv("RESULTS_DIR", "./static/results")
     UPLOADS_DIR: str = os.getenv("UPLOADS_DIR", "./static/uploads")

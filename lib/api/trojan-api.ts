@@ -39,16 +39,12 @@ export const trojanApi = {
   },
 
   async predict(
-    featuresFile: File,
-    edgesFile: File,
-    metaFile?: File
+    files: File[]
   ): Promise<TrojanPrediction> {
     const formData = new FormData();
-    formData.append('features_file', featuresFile);
-    formData.append('edges_file', edgesFile);
-    if (metaFile) {
-      formData.append('meta_file', metaFile);
-    }
+    files.forEach(file => {
+      formData.append('files', file);
+    });
 
     const response = await fetch(`${API_BASE_URL}/api/v1/predict`, {
       method: 'POST',
