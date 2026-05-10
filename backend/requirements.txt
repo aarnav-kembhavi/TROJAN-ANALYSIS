@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+pydantic-settings
+numpy
+pandas
+torch
+torch-geometric
+scikit-learn
+python-dotenv
+aiofiles
