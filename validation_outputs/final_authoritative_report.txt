@@ -6,9 +6,9 @@ Feature Set: 40-dim + Augmented Fan-in Density
 
 --- GLOBAL PERFORMANCE ---
 AUROC:    1.0000
-F1 Score: 0.9706
-MCC:      0.9642
+F1 Score: 0.9730
+MCC:      0.9665
 
 --- CONFUSION MATRIX ---
-TP: 33  | FP: 2  
+TP: 36  | FP: 2  
 FN: 0   | TN: 142

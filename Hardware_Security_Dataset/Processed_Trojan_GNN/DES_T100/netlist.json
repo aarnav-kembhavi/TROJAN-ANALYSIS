@@ -1,0 +1,341 @@
+{
+  "creator": "Yosys 0.9 (git sha1 1979e0b)",
+  "modules": {
+    "TSC": {
+      "attributes": {
+        "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:2"
+      },
+      "ports": {
+        "rst": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "key": {
+          "direction": "input",
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67 ]
+        },
+        "load": {
+          "direction": "output",
+          "bits": [ 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131 ]
+        }
+      },
+      "cells": {
+        "$procdff$8": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": 1,
+            "ARST_VALUE": "0000000000000000000000000000000000000000000000000000000000000000",
+            "CLK_POLARITY": 1,
+            "WIDTH": 64
+          },
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:13"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 3 ],
+            "D": [ 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195 ],
+            "Q": [ 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131 ]
+          }
+        },
+        "$procdff$9": {
+          "hide_name": 1,
+          "type": "$adff",
+          "parameters": {
+            "ARST_POLARITY": 1,
+            "ARST_VALUE": 629145,
+            "CLK_POLARITY": 1,
+            "WIDTH": 20
+          },
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:9"
+          },
+          "port_directions": {
+            "ARST": "input",
+            "CLK": "input",
+            "D": "input",
+            "Q": "output"
+          },
+          "connections": {
+            "ARST": [ 2 ],
+            "CLK": [ 3 ],
+            "D": [ 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215 ],
+            "Q": [ 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216 ]
+          }
+        },
+        "$xor$Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11$2": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 216 ],
+            "B": [ 213 ],
+            "Y": [ 217 ]
+          }
+        },
+        "$xor$Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11$3": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 217 ],
+            "B": [ 211 ],
+            "Y": [ 218 ]
+          }
+        },
+        "$xor$Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11$4": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 218 ],
+            "B": [ 209 ],
+            "Y": [ 196 ]
+          }
+        },
+        "$xor$Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:15$6": {
+          "hide_name": 1,
+          "type": "$xor",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 64,
+            "B_SIGNED": 0,
+            "B_WIDTH": 64,
+            "Y_WIDTH": 64
+          },
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:15"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67 ],
+            "B": [ "0", "0", "0", 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, "0", "0", "0", 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, "0", "0", "0", 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211 ],
+            "Y": [ 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195 ]
+          }
+        }
+      },
+      "netnames": {
+        "$0\\load[63:0]": {
+          "hide_name": 1,
+          "bits": [ 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:13"
+          }
+        },
+        "$0\\state[19:0]": {
+          "hide_name": 1,
+          "bits": [ 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:9"
+          }
+        },
+        "$xor$Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11$2_Y": {
+          "hide_name": 1,
+          "bits": [ 217 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11"
+          }
+        },
+        "$xor$Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11$3_Y": {
+          "hide_name": 1,
+          "bits": [ 218 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:11"
+          }
+        },
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:4"
+          }
+        },
+        "key": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:5"
+          }
+        },
+        "load": {
+          "hide_name": 0,
+          "bits": [ 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:6"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:3"
+          }
+        },
+        "state": {
+          "hide_name": 0,
+          "bits": [ 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:8"
+          }
+        }
+      }
+    },
+    "des_t100": {
+      "attributes": {
+        "top": 1,
+        "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:19"
+      },
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "reset": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "load_i": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "decrypt_i": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "data_i": {
+          "direction": "input",
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ]
+        },
+        "key_i": {
+          "direction": "input",
+          "bits": [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133 ]
+        },
+        "data_o": {
+          "direction": "output",
+          "bits": [ 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197 ]
+        },
+        "ready_o": {
+          "direction": "output",
+          "bits": [ 198 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "clk": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:20"
+          }
+        },
+        "data_i": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:24"
+          }
+        },
+        "data_o": {
+          "hide_name": 0,
+          "bits": [ 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:26"
+          }
+        },
+        "decrypt_i": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:23"
+          }
+        },
+        "key_i": {
+          "hide_name": 0,
+          "bits": [ 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:25"
+          }
+        },
+        "load_i": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:22"
+          }
+        },
+        "ready_o": {
+          "hide_name": 0,
+          "bits": [ 198 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:27"
+          }
+        },
+        "reset": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "Hardware_Security_Dataset/Injected_Trojans_Verilog/des_t100.v:21"
+          }
+        }
+      }
+    }
+  }
+}
